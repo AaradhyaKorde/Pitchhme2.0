@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import localFont from "next/font/local";
+import React, { useRef, useEffect } from "react";
 import Navbar from "./subC/Navbar";
+import localFont from "next/font/local";
 
 const satoshi = localFont({
   src: [
@@ -20,8 +19,6 @@ const satoshi = localFont({
 });
 
 const PitchhmeLanding = () => {
-  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -32,8 +29,8 @@ const PitchhmeLanding = () => {
 
   return (
     <div
-      className={`${satoshi.variable} font-sans bg-black text-white min-h-screen flex flex-col relative overflow-hidden`}>
-      <video
+      className={`${satoshi.variable} bg-black  text-white min-h-screen flex flex-col relative overflow-hidden`}>
+      {/* <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/images/video.mp4"
@@ -41,7 +38,7 @@ const PitchhmeLanding = () => {
         loop
         muted
         playsInline
-      />
+      /> */}
       <div className="flex flex-col min-h-screen relative z-10">
         <Navbar />
 
