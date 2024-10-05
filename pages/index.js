@@ -2,12 +2,16 @@ import React from "react";
 import Home from "./components/Home";
 import { CardHoverEffectDemo } from "./components/Cards";
 import Mv from "./components/Mv";
+import Footer from "./components/subC/Footer";
+import OurResults from "./components/Results";
 const Index = () => {
   return (
-    <div>
+    <div className="overflow-x-auto">
       <Home />
       <CardHoverEffectDemo />
       <Mv />
+      <OurResults />
+      <Footer />
     </div>
   );
 };

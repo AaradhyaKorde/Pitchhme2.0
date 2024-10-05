@@ -29,7 +29,7 @@ const PitchhmeLanding = () => {
 
   return (
     <div
-      className={`${satoshi.variable} bg-black  text-white min-h-screen flex flex-col relative overflow-hidden`}>
+      className={`${satoshi.variable} bg-black  text-white h-screen flex flex-col relative overflow-hidden`}>
       {/* <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -39,7 +39,7 @@ const PitchhmeLanding = () => {
         muted
         playsInline
       /> */}
-      <div className="flex flex-col min-h-screen relative z-10">
+      <div className="flex flex-col h-screen relative z-10">
         <Navbar />
 
         {/* Main Section */}
