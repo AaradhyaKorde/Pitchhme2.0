@@ -109,7 +109,7 @@ const Navbar = () => {
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700">
-            Book intro call — it's free
+            Book intro call — it&apos;s free
           </button>
         </div>
 
@@ -184,7 +184,7 @@ const Navbar = () => {
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 mt-2 w-full">
-            Book intro call — it's free
+            Book intro call — it&apos;s free
           </button>
         </div>
       )}

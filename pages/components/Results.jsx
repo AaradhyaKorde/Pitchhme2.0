@@ -46,13 +46,13 @@ const OurResults = () => {
             15.5M
           </h3>
           <p className="text-black text-xs md:text-sm mt-4 md:mt-6 text-left md:ml-16">
-            Engagement we provided for our clients' business
+            Engagement we provided for our client&apos;s business
           </p>
         </div>
       </div>
 
       <p className="text-gray-500 mt-16 md:mt-24 text-sm md:text-base">
-        And we've spent 3 years doing it with great teams at
+        And we&apos;ve spent 3 years doing it with great teams at
       </p>
       <Image
         className="mt-6 md:mt-10 w-full"

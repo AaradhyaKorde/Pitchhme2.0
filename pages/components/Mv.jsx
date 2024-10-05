@@ -8,7 +8,7 @@ const SolutionsSection = () => {
       <div className="text-center mb-10">
         <p className="text-black text-sm">Solutions</p>
         <h2 className="text-[48px] font-bold mt-2 font-['Satoshi_Variable'] leading-[56px] tracking-[-0.02em] text-center">
-          If they resonate... you're not alone.
+          If they resonate... you&apos;re not alone.
           <br />
           We can help.
         </h2>

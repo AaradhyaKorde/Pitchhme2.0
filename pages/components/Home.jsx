@@ -49,7 +49,7 @@ const PitchhmeLanding = () => {
               Marketing agency studio
             </div>
             <h1 className="text-2xl md:text-[50px] font-bold leading-tight tracking-[-2%] mb-6">
-              Don't let marketing be the reason your business fails.
+              Don&apos;t let marketing be the reason your business fails.
             </h1>
             <p className="text-base md:text-base text-gray-400">
               Startups, SMEs, and large enterprises come to{" "}
