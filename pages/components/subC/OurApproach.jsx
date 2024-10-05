@@ -2,8 +2,8 @@ import React from 'react';
 
 const OurApproachSection = (props) => {
   return (
-    <section className="bg-white text-center py-16 px-4 md:px-8 min-h-screen flex flex-col justify-center items-center">
-      <svg className="w-full max-w-[90%] md:max-w-[1124px] h-auto mb-8" viewBox="0 0 1124 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section className="bg-white text-center py-8 md:py-16 px-4 md:px-8 min-h-screen flex flex-col justify-center items-center">
+      <svg className="w-full max-w-[90%] md:max-w-[1124px] h-auto mb-4 md:mb-8" viewBox="0 0 1124 292" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.08">
 <rect x="178" width="1" height="120" rx="0.5" fill="#0E3F7E" fill-opacity="0.06"/>
 <rect x="178" width="1" height="120" rx="0.5" fill="url(#paint0_linear_219_4219)"/>
@@ -77,10 +77,10 @@ const OurApproachSection = (props) => {
 </defs>
 </svg>
 
-      <p className="text-base md:text-lg text-gray-500 max-w-3xl mx-auto mb-8">
+      <p className="text-sm md:text-base lg:text-lg text-gray-500 max-w-3xl mx-auto mb-4 md:mb-8">
         {props.description1}
       </p>
-      <p className="text-base md:text-lg text-gray-500 max-w-3xl mx-auto">
+      <p className="text-sm md:text-base lg:text-lg text-gray-500 max-w-3xl mx-auto">
         {props.description2}
       </p>
     </section>
