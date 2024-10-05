@@ -12,7 +12,7 @@ import OurResults from './subC/OurResults';
 import ourResults from '../../resources/ourResults';
 import OurPlatforms from './subC/OurPlatforms';
 import platforms from '../../resources/ourPlateforms';
-
+import Footer from './subC/Footer';
 const satoshi = localFont({
   src: [
     {
@@ -45,6 +45,7 @@ const PageStartSection = (props) => {
       <TheProcessWeFollow />
       <OurResults result1={ourResults[props.number].result1} result2={ourResults[props.number].result2} result3={ourResults[props.number].result3} result4={ourResults[props.number].result4} />
       <OurPlatforms link1={platforms[props.number].link1} link2={platforms[props.number].link2} link3={platforms[props.number].link3} link4={platforms[props.number].link4} link5={platforms[props.number].link5} />
+      <Footer />
     </div>
   );
 };
