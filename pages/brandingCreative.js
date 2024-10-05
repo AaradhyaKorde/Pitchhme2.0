@@ -2,12 +2,12 @@ import React from "react";
 import PageStartSection from "./components/PageStart";
 import pageInfo from "../resources/pageInfo";
 
-const socialMedia = () => {
+const brandingCreative = () => {
   return (
     <div>
-      <PageStartSection title={pageInfo[0].title} description={pageInfo[0].description} number={0} />
+      <PageStartSection title={pageInfo[5].title} description={pageInfo[5].description} number={5} />
     </div>
   );
 };
 
-export default socialMedia;
+export default brandingCreative;
