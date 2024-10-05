@@ -3,6 +3,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
+export default function CardHoverEffect({ items, className }) {
+  return <HoverEffect items={items} className={className} />;
+}
+
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
