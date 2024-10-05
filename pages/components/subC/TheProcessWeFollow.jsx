@@ -26,7 +26,7 @@ const ProcessWeFollow = () => {
 
   return (
     <div className="py-16 bg-white flex flex-col items-center h-screen">
-     <svg width="1124" height="292" viewBox="0 0 1124 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <svg className="w-full max-w-[1124px] h-auto" viewBox="0 0 1124 292" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 <g opacity="0.08">
 <rect x="178" width="1" height="120" rx="0.5" fill="#0E3F7E" fill-opacity="0.06"/>
 <rect x="178" width="1" height="120" rx="0.5" fill="url(#paint0_linear_226_37)"/>
