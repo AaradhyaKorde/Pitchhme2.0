@@ -53,11 +53,13 @@ export const HoverEffect = ({ items, className }) => {
 const Card = ({ className, children }) => (
   <div
     className={cn(
-      "rounded-lg h-36 w-full p-3 overflow-hidden border border-slate-800 dark:border-white/[0.2] group-hover:border-slate-600 relative z-20 transition-all duration-300 ease-in-out backdrop-blur-sm bg-slate-900/50",
+      "rounded-lg h-auto min-h-[9rem] w-full p-3 overflow-hidden border border-slate-800 dark:border-white/[0.2] group-hover:border-slate-600 relative z-20 transition-all duration-300 ease-in-out backdrop-blur-sm bg-slate-900/50",
       className
     )}>
     <div className="relative z-50">
-      <div className="p-1 flex flex-col items-center">{children}</div>
+      <div className="p-1 flex flex-col items-center h-full justify-center">
+        {children}
+      </div>
     </div>
   </div>
 );

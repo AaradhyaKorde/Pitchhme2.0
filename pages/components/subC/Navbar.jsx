@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  const toggleServicesDropdown = () => setShowServicesDropdown(!showServicesDropdown);
+  const toggleServicesDropdown = () =>
+    setShowServicesDropdown(!showServicesDropdown);
   const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
       <header className="flex justify-between items-center p-6">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 px-10">
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/work" className="hover:text-gray-400">
             Work
           </Link>
           <div className="relative">
@@ -46,28 +47,46 @@ const Navbar = () => {
                   aria-orientation="vertical"
                   aria-labelledby="options-menu">
                   <Link
-                    href="#"
+                    href="/socialMedia"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem">
-                    Service 1
+                    Social Media
                   </Link>
                   <Link
-                    href="#"
+                    href="/influencerMarketing"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem">
-                    Service 2
+                    Influencer Marketing
                   </Link>
                   <Link
-                    href="#"
+                    href="/paidSocial"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     role="menuitem">
-                    Service 3
+                    Paid Social
+                  </Link>
+                  <Link
+                    href="/paidSearch"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    role="menuitem">
+                    Paid Search
+                  </Link>
+                  <Link
+                    href="/communityManagement"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    role="menuitem">
+                    Community Management
+                  </Link>
+                  <Link
+                    href="/brandingCreative"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    role="menuitem">
+                    Branding & Creative
                   </Link>
                 </div>
               </div>
             )}
           </div>
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/blogs" className="hover:text-gray-400">
             Blogs
           </Link>
         </nav>
@@ -86,7 +105,7 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4 px-10">
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/aboutus" className="hover:text-gray-400">
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700">
@@ -95,9 +114,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={toggleMobileMenu}>
+        <button className="md:hidden text-white" onClick={toggleMobileMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -117,7 +134,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {showMobileMenu && (
         <div className="md:hidden bg-black text-white p-4">
-          <Link href="#" className="block py-2">
+          <Link href="/work" className="block py-2">
             Work
           </Link>
           <button
@@ -140,21 +157,30 @@ const Navbar = () => {
           </button>
           {showServicesDropdown && (
             <div className="pl-4">
-              <Link href="#" className="block py-2">
-                Service 1
+              <Link href="/socialMedia" className="block py-2">
+                Social Media
               </Link>
-              <Link href="#" className="block py-2">
-                Service 2
+              <Link href="/influencerMarketing" className="block py-2">
+                Influencer Marketing
               </Link>
-              <Link href="#" className="block py-2">
-                Service 3
+              <Link href="/paidSocial" className="block py-2">
+                Paid Social
+              </Link>
+              <Link href="/paidSearch" className="block py-2">
+                Paid Search
+              </Link>
+              <Link href="/communityManagement" className="block py-2">
+                Community Management
+              </Link>
+              <Link href="/brandingCreative" className="block py-2">
+                Branding & Creative
               </Link>
             </div>
           )}
-          <Link href="#" className="block py-2">
+          <Link href="/blogs" className="block py-2">
             Blogs
           </Link>
-          <Link href="#" className="block py-2">
+          <Link href="/aboutus" className="block py-2">
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 mt-2 w-full">
