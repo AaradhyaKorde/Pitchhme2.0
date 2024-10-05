@@ -2,7 +2,7 @@ import { HoverEffect } from "./ui/card-hover-effect";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export default function CardHoverEffectDemo() {
+export function CardHoverEffectDemo() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
