@@ -20,7 +20,7 @@ const servicesIncluded = [
     service8: "Tailored Analytics"
   },
   {
-    service1: "Social media consulting",
+    service1: "Social media consultaion",
     service2: "Campaign Strategy and management",
     service3: "Audience Targeting and Segmentation",
     service4: "Technical Setup and Maintenance",
