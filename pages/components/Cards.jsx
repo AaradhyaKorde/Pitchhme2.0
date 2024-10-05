@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="w-full h-screen bg-[#090a15] text-white">
+    <div className="w-full h-[101vh] bg-[#090a15] text-white">
       <HoverEffect items={projects} />
     </div>
   );
