@@ -38,6 +38,9 @@ const PageStartSection = (props) => {
         <p className="text-base md:text-lg text-gray-400 max-w-2xl">
           {props.description}
         </p>
+        <p className="text-base md:text-lg text-gray-400 max-w-2xl mt-4">
+          {data ? data.description1 : 'Loading...'}
+        </p>
       </main>
       <OurApproachSection description1={ourApproachData[props.number].description1} description2={ourApproachData[props.number].description2}/>
       <WeCanHelpYou text1={helpSectionData[props.number].text1} text2={helpSectionData[props.number].text2} text3={helpSectionData[props.number].text3} text4={helpSectionData[props.number].text4} />
