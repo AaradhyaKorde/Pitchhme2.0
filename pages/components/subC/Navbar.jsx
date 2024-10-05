@@ -16,7 +16,7 @@ const Navbar = () => {
       <header className="flex justify-between items-center p-6">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 px-10">
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/work" className="hover:text-gray-400">
             Work
           </Link>
           <div className="relative">
@@ -86,7 +86,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/blogs" className="hover:text-gray-400">
             Blogs
           </Link>
         </nav>
@@ -105,7 +105,7 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4 px-10">
-          <Link href="#" className="hover:text-gray-400">
+          <Link href="/aboutus" className="hover:text-gray-400">
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700">
@@ -134,7 +134,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {showMobileMenu && (
         <div className="md:hidden bg-black text-white p-4">
-          <Link href="#" className="block py-2">
+          <Link href="/work" className="block py-2">
             Work
           </Link>
           <button
@@ -177,10 +177,10 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-          <Link href="#" className="block py-2">
+          <Link href="/blogs" className="block py-2">
             Blogs
           </Link>
-          <Link href="#" className="block py-2">
+          <Link href="/aboutus" className="block py-2">
             About Us
           </Link>
           <button className="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 mt-2 w-full">
