@@ -75,7 +75,7 @@ const HelpSection = (props) => {
 <stop offset="1" stop-color="#1D3E7A"/>
 </linearGradient>
 </defs>
-</svg>
+</svg>  
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-4xl">
         <div className="flex flex-col items-center text-center space-y-4">
