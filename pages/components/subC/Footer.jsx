@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-10 px-4 md:px-28">
+    <footer className="bg-gray-900 text-white py-10 px-4 md:px-40">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start">
           {/* Left section: Company Info */}
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Center sections: Links */}
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12 py-5">
             <div>
-              <h3 className="text-white font-semibold mb-2">Services</h3>
+              <h3 className="text-gray-500 font-semibold mb-2">Services</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/paidSocial" className="hover:text-white">
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-2">Others</h3>
+              <h3 className="text-gray-500 font-semibold mb-2">Others</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/work" className="hover:text-white">
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-2">Company</h3>
+              <h3 className="text-gray-500 font-semibold mb-2">Company</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/contact" className="hover:text-white">
@@ -106,47 +106,57 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            <div>
+              <h3 className="text-gray-500 font-semibold mb-2">Social</h3>
+              <ul className="flex space-x-4">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/pitchhme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white">
+                    <Image
+                      src="/svgs/linkedin.svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/pitchhme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white">
+                    <Image
+                      src="/svgs/twitter.svg"
+                      alt="Twitter"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/pitchhme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white">
+                    <Image
+                      src="/svgs/github.svg"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          {/* Right section: Social Icons */}
-          <div className="flex space-x-4 mt-6 md:mt-0">
-            <a
-              href="https://www.linkedin.com/company/pitchhme"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white">
-              <Image
-                src="/svgs/linkedin.svg"
-                alt="LinkedIn"
-                width={24}
-                height={24}
-              />
-            </a>
-            <a
-              href="https://twitter.com/pitchhme"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white">
-              <Image
-                src="/svgs/twitter.svg"
-                alt="Twitter"
-                width={24}
-                height={24}
-              />
-            </a>
-            <a
-              href="https://github.com/pitchhme"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white">
-              <Image
-                src="/svgs/github.svg"
-                alt="GitHub"
-                width={24}
-                height={24}
-              />
-            </a>
-          </div>
+          {/* Right section: Removed as social icons are now in the "Social" section */}
         </div>
         <div className="my-8">
           <Image

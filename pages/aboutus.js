@@ -28,7 +28,7 @@ const AboutUs = () => {
     },
   ];
   return (
-    <>
+    <section className="overflow-x-hidden">
       <div>
         <ThreePage
           title={pageInfo[8].title}
@@ -699,7 +699,7 @@ const AboutUs = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </section>
   );
 };
 
