@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-sm">
               205 W 28th St
               <br />
-              New York, NY 10001
+              New York, 10001
             </p>
           </div>
 
