@@ -29,16 +29,16 @@ const PitchhmeLanding = () => {
 
   return (
     <div
-      className={`${satoshi.variable} bg-black  text-white h-screen flex flex-col relative overflow-hidden`}>
-      {/* <video
+      className={`${satoshi.variable} bg-black   text-white min-h-screen flex flex-col relative overflow-hidden`}>
+      <video
         ref={videoRef}
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/images/video.mp4"
+        className="absolute top-0 left-0 w-full h-full object-cover scale-100 sm:scale-0"
+        src="/images/video1.mp4"
         autoPlay
         loop
         muted
         playsInline
-      /> */}
+      />
       <div className="flex flex-col h-screen relative z-10">
         <Navbar />
 

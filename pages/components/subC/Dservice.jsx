@@ -7,31 +7,35 @@ const Dservice = (props) => {
   ); // Filter out any undefined or null values
 
   return (
-    <section>
-      <div className="px-24 flex flex-col md:flex-row">
-        <div className="flex-1 pr-6 mb-6 md:mb-0">
-          <h3 className="text-3xl font-semibold mb-4">{props.title}</h3>
-          <p className="text-gray-900 mb-6">{props.description}</p>
-          <div className="flex flex-wrap gap-4">
-            {services.map((service, index) => (
-              <span
-                key={index}
-                className=" text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-sm">
-                {service}
-              </span>
-            ))}
+    <section className="py-20 sm:py-12 md:py-16">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex-1">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
+              {props.title}
+            </h3>
+            <p className="text-gray-900 mb-6">{props.description}</p>
+            <div className="flex flex-wrap gap-2 sm:gap-4">
+              {services.map((service, index) => (
+                <span
+                  key={index}
+                  className="text-gray-900 bg-gray-100 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm">
+                  {service}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="flex-1">
-          <Image
-            src="/images/p1.png"
-            alt="Social Media Illustration"
-            width={500}
-            height={300}
-            layout="responsive"
-            objectFit="cover"
-            className="rounded-lg"
-          />
+          <div className="flex-1 mt-6 lg:mt-0">
+            <div className="relative w-full h-0 pb-[60%] sm:pb-[56.25%]">
+              <Image
+                src="/images/p2.png"
+                alt="Social Media Illustration"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

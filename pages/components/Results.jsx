@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import CountUp from "react-countup";
 const OurResults = () => {
   return (
     <section className="text-center py-10 md:py-20 px-4 md:px-0">
@@ -16,7 +16,7 @@ const OurResults = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
         <div className="text-center">
           <h3 className="text-teal-500 text-3xl md:text-4xl font-semibold">
-            120M+
+            <CountUp end={120} suffix="M+" enableScrollSpy scrollSpyOnce />
           </h3>
           <p className="text-black text-xs md:text-sm mt-4 md:mt-6 text-left md:ml-16">
             Total Views on Social <br /> Media on all platforms
@@ -25,7 +25,7 @@ const OurResults = () => {
 
         <div className="text-center">
           <h3 className="text-red-500 text-3xl md:text-4xl font-semibold">
-            &gt;1000
+            <CountUp end={1000} prefix=">" enableScrollSpy scrollSpyOnce />
           </h3>
           <p className="text-black text-xs md:text-sm mt-4 md:mt-6 text-left md:ml-16">
             Paid Search Campaigns <br /> Launched
@@ -34,7 +34,7 @@ const OurResults = () => {
 
         <div className="text-center">
           <h3 className="text-green-500 text-3xl md:text-4xl font-semibold md:mr-10">
-            25+
+            <CountUp end={25} suffix="+" enableScrollSpy scrollSpyOnce />
           </h3>
           <p className="text-black text-xs md:text-sm mt-4 md:mt-6 text-left md:ml-16">
             GEOs covered in performance marketing
@@ -43,7 +43,13 @@ const OurResults = () => {
 
         <div className="text-center">
           <h3 className="text-purple-500 text-3xl md:text-4xl font-semibold">
-            15.5M
+            <CountUp
+              end={15.5}
+              suffix="M"
+              decimals={1}
+              enableScrollSpy
+              scrollSpyOnce
+            />
           </h3>
           <p className="text-black text-xs md:text-sm mt-4 md:mt-6 text-left md:ml-16">
             Engagement we provided for our client&apos;s business
@@ -61,7 +67,7 @@ const OurResults = () => {
         width={1000}
         height={1000}
       />
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-6 justify-center items-center mt-6 md:mt-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-6 justify-center items-center mt-6 md:mt-8 max-w-5xl mx-auto text-center">
         {[
           { src: "/svgs/netflix.svg", alt: "Netflix logo" },
           { src: "/svgs/marvel.svg", alt: "Marvel logo" },
@@ -69,18 +75,6 @@ const OurResults = () => {
           { src: "/svgs/sony.svg", alt: "Sony Liv logo" },
           { src: "/svgs/realme.svg", alt: "Realme logo" },
           { src: "/svgs/tcf.svg", alt: "TVF logo" },
-        ].map((logo, index) => (
-          <Image
-            key={index}
-            src={logo.src}
-            alt={logo.alt}
-            width={100}
-            height={50}
-            className="w-20 md:w-24 h-auto"
-          />
-        ))}
-        {/* Repeat logos for second row */}
-        {[
           { src: "/svgs/netflix.svg", alt: "Netflix logo" },
           { src: "/svgs/marvel.svg", alt: "Marvel logo" },
           { src: "/svgs/amazon.svg", alt: "Amazon miniTV logo" },
@@ -88,14 +82,15 @@ const OurResults = () => {
           { src: "/svgs/realme.svg", alt: "Realme logo" },
           { src: "/svgs/tcf.svg", alt: "TVF logo" },
         ].map((logo, index) => (
-          <Image
-            key={index + 6}
-            src={logo.src}
-            alt={logo.alt}
-            width={100}
-            height={50}
-            className="w-20 md:w-24 h-auto"
-          />
+          <div key={index} className="flex justify-center items-center">
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={100}
+              height={50}
+              className="w-20 md:w-24 h-auto"
+            />
+          </div>
         ))}
       </div>
       <Image

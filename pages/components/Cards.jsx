@@ -21,8 +21,27 @@ export function CardHoverEffectDemo() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-[#090a15] text-white py-10 px-4 md:px-8 lg:px-16">
-      <HoverEffect items={isMobile ? projects.slice(0, 4) : projects} />
+    <div className="w-full min-h-screen bg-[#090a15] text-white sm:py-4 pt-32 px-4 md:px-8 lg:px-16">
+      {isMobile ? (
+        <>
+          <div className="flex flex-col items-center">
+            <h2 className="text-center text-sm text-white mb-2">Problems</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold mb-8 md:mb-12 text-white text-center">
+              Do any of these sound familiar?
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {projects.slice(0, 4).map((project, index) => (
+              <div key={index} className="bg-gray-800 p-4 rounded-lg">
+                {project.icon}
+                <p className="mt-2 text-sm">{project.description}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <HoverEffect items={projects} />
+      )}
     </div>
   );
 }
