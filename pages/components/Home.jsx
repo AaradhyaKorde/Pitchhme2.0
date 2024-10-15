@@ -29,7 +29,7 @@ const PitchhmeLanding = () => {
 
   return (
     <div
-      className={`${satoshi.variable} bg-black   text-white min-h-screen flex flex-col relative overflow-hidden`}>
+      className={`${satoshi.variable} bg-black text-white min-h-screen flex flex-col relative overflow-hidden`}>
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover scale-100 sm:scale-0"

@@ -13,6 +13,9 @@ const Navbar = () => {
       <header className="flex justify-between items-center p-6">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 px-10">
+          <Link href="/" className="hover:text-gray-400">
+            Home
+          </Link>
           <Link href="/work" className="hover:text-gray-400">
             Work
           </Link>

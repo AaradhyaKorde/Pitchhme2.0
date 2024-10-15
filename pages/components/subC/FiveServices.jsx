@@ -21,15 +21,15 @@ const FiveServices = () => {
 
   return (
     <>
-      <div className="text-center pt-16 md:pt-32">
-        <h4 className="text-sm md:text-base text-gray-500 mb-2 md:mb-4">
+      <div className="text-center pt-10 md:pt-32">
+        <h4 className="text-base md:text-base text-gray-500 mb-2 md:mb-4">
           Services
         </h4>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+        <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold md:mb-6">
           Expertise You Can Trust
         </h2>
       </div>
-      <div className="px-4 md:px-8">
+      <div className="px-4 md:px-8 ">
         {dServices.slice(0, 6).map((service, index) => (
           <Dservice key={index} {...service} />
         ))}
